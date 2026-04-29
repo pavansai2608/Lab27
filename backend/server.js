@@ -17,4 +17,4 @@ mongoose.connect(MONGO_URI, { dbName: "Ass27"})
 app.use("/api", require("./routes"));
 
 // Server
-app.listen(5001, () => console.log("🚀 Server running on 5001"));
+app.listen(5001, () => console.log("🚀 Server running on 5002"));
