@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/lab27.git'
+                    url: 'https://github.com/pavansai2608/lab27.git'
             }
         }
 
