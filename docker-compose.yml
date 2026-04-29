@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: lab27-backend
+    ports:
+      - "5001:5001"
+    environment:
+      MONGO_URI: mongodb+srv://golipavansaikrishna2608_db_user:LbMQXDcPkhjAL5Ie@cluster0.bvyloaz.mongodb.net/?appName=Cluster0
+
+  frontend:
+    build: ./frontend
+    container_name: lab27-frontend
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+    depends_on:
+      - backend
